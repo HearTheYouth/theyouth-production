@@ -1,0 +1,15 @@
+[build]
+  base    = "web"
+  command = "npm run build"
+  publish = "dist"
+
+# Nette URL's zonder .html
+[[redirects]]
+  from = "/wall-of-talent"
+  to = "/wall-of-talent.html"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
