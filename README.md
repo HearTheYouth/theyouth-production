@@ -42,3 +42,14 @@ cd studio && npm run build
 
 - **`web/`** – Frontend (Vite, HTML/CSS/JS). Wall of Talent gebruikt nu placeholder-data in `web/js/data.js`; later kun je hier `@sanity/client` + GROQ toevoegen.
 - **`studio/`** – Sanity Studio op project **dpv7nblq**, dataset `production`, documenttype o.a. **Talent** (naam, tagline, categorie).
+
+### Studio live (theyouthproduction.netlify.app/studio)
+
+De link **/studio** op de site redirect naar Sanity’s hosting. **Eerste keer:** deploy de studio daarheen:
+
+```bash
+cd studio
+npx sanity deploy
+```
+
+Kies (of bevestig) hostname **theyouth-studio** – daarna is de studio bereikbaar op https://theyouth-studio.sanity.studio/studio en via https://theyouthproduction.netlify.app/studio.

@@ -13,3 +13,16 @@
   from = "/about"
   to = "/about.html"
   status = 301
+
+# Studio: redirect naar Sanity hosting (deploy eerst met: cd studio && npx sanity deploy)
+[[redirects]]
+  from = "/studio"
+  to = "https://theyouth-studio.sanity.studio/studio"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/studio/*"
+  to = "https://theyouth-studio.sanity.studio/studio/:splat"
+  status = 302
+  force = true

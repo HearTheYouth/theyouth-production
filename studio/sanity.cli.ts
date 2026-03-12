@@ -8,4 +8,5 @@ export default defineCliConfig({
   project: {
     basePath: '/studio',
   },
+  studioHost: 'theyouth-studio',
 })
